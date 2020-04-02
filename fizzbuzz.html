@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FizzBuzz</title>
+</head>
+<body>
+  <main>
+    <h1>ConsoleにFizzBuzzが表示されます</h1>
+  </main>
+  <script>
+    let n = 100;
+    for(let i = 1;i <= n;i++){
+    let s = '';
+    if(i % 3 === 0){
+      s += 'Fizz';
+    }
+    if(i % 5 === 0 ){
+      s += 'Buzz';
+    }
+    if(s === '' ){
+      s = i;
+    }
+    console.log(`${s}`);
+  }
+  </script>
+</body>
+</html>
