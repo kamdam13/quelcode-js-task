@@ -20,7 +20,11 @@ function calc(operator) {
 		break;
 
 	case '/':
-		res.textContent = num1 / num2;
+		if(num2 === 0){
+			res.textContent = 'ゼロで割ることは出来ません';
+		}else{
+			res.textContent = num1 / num2;
+		}
 		break;
 	default:
 		res.textContent = 'error';
