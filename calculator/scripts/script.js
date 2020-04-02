@@ -7,19 +7,19 @@ function calc(operator) {
 	let res = document.getElementById('result');
 
 	switch (operator) {
-	case 0:
+	case '+':
 		res.textContent = num1 + num2;
 		break;
 
-	case 1:
+	case '-':
 		res.textContent = num1 - num2;
 		break;
 
-	case 2:
+	case '*':
 		res.textContent = num1 * num2;
 		break;
 
-	case 3:
+	case '/':
 		res.textContent = num1 / num2;
 		break;
 	default:
@@ -30,17 +30,17 @@ function calc(operator) {
 }
 
 document.getElementById('btn-add').onclick = function(){
-	calc(0);
+	calc('+');
 };
 
 document.getElementById('btn-sub').onclick = function(){
-	calc(1);
+	calc('-');
 };
 
 document.getElementById('btn-mul').onclick = function(){
-	calc(2);
+	calc('*');
 };
 
 document.getElementById('btn-div').onclick = function(){
-	calc(3);
+	calc('/');
 };
